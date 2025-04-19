@@ -1,1 +1,77 @@
+--=================================
+-- 1. Получаем всех пользователей с именами их менеджеров.
+--=================================
+SELECT 
+    u.id AS user_id,
+    u.username AS user_name,
+    m.id AS manager_id,
+    m.manager_name AS manager_name
+FROM 
+    users u
+JOIN 
+    managers m ON u.manager_id = m.id;
+
+--===================================
+-- 2. Обновляем имя задачи с id = 3.
+--===================================
+UPDATE tasks
+SET task_name = 'Полная переконфигурация CI/CD пайплайна для production'
+WHERE id = 3;
+
+--===================================
+-- 3. Считаем, сколько пользователей у каждого менеджера.
+--===================================
+SELECT 
+    m.id AS manager_id,
+    m.manager_name AS manager_name,
+    COUNT(u.id) AS user_count
+FROM 
+    managers m
+LEFT JOIN 
+    users u ON m.id = u.manager_id
+GROUP BY 
+    m.id, m.manager_name
+ORDER BY 
+    user_count DESC;
+
+--=====================================
+-- 4. Выводим список задач с автором и исполнителем.
+--=====================================
+SELECT 
+    t.id AS task_id,
+    t.task_name,
+    a.username AS author_name,
+    e.username AS assigned_name
+FROM 
+    tasks t
+JOIN 
+    users a ON t.author_id = a.id
+JOIN 
+    users e ON t.assigned_id = e.id;
+
+--======================================
+-- 5. Находим задачи, где исполнитель — пользователь с id = 5.
+--======================================
+SELECT 
+    t.id AS task_id,
+    t.task_name,
+    u.username AS assigned_user
+FROM 
+    tasks t
+JOIN 
+    users u ON t.assigned_id = u.id
+WHERE 
+    t.assigned_id = 5;
+
+--======================================
+-- 6. Находим пользователя по части имени.
+--======================================
+SELECT 
+    id,
+    username,
+    manager_id
+FROM 
+    users
+WHERE 
+    username LIKE '%Павел%';
 
