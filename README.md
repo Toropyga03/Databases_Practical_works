@@ -1,2 +1,2 @@
-This repository contains practical work on the Fundamentals of Database Design 
+This repository contains practical works on the Fundamentals of Database Design 
 for SkillBox 
