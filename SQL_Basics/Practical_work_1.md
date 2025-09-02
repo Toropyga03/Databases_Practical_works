@@ -11,6 +11,7 @@
 > <img width="1611" height="741" alt="image" src="https://github.com/user-attachments/assets/26d8d69a-dd33-4723-bed7-7f4b60846607" />
 
 ## Task 5(optional)
-> 
+> <img width="1224" height="240" alt="image" src="https://github.com/user-attachments/assets/8047cdc5-76d0-409e-8595-d125b89fbf1d" />
+> Представленная база данных содержит одну таблицу "exporters", в которой 4 столбца. Данные и строки в таблице отсутствуют.
 
 
