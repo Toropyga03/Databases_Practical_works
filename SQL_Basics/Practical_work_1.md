@@ -8,7 +8,7 @@
 > <img width="1336" height="655" alt="image" src="https://github.com/user-attachments/assets/4cf61674-4334-4533-94df-07ceb8cec7cb" />
 
 ## Task 4
-> <img width="1888" height="794" alt="image" src="https://github.com/user-attachments/assets/3b6529ff-fe57-4920-a24e-765ebf1f7067" />
+> <img width="1611" height="741" alt="image" src="https://github.com/user-attachments/assets/26d8d69a-dd33-4723-bed7-7f4b60846607" />
 
 ## Task 5(optional)
 > <img width="1237" height="392" alt="image" src="https://github.com/user-attachments/assets/db3b065d-8c5d-4578-b031-6c9c66888252" />
